@@ -1,0 +1,157 @@
+ /* Importation de la police */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+ /* Style global */
+ body {
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     background: linear-gradient(to right, #16222A, #3A6073);
+     text-align: center;
+     color: #333;
+ }
+ 
+ /* --------- HEADER --------- */
+ header {
+     background: #1c2b4a;
+     color: white;
+     padding: 15px 50px;
+     font-size: 22px;
+     font-weight: bold;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /* Barre de navigation */
+ nav ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     gap: 20px;
+ }
+ 
+ nav ul li {
+     display: inline;
+ }
+ 
+ nav ul li a {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s ease-in-out;
+ }
+ 
+ nav ul li a:hover {
+     color: #f4a261;
+     transform: scale(1.1);
+ }
+ 
+ /* --------- MAIN --------- */
+ main {
+     padding: 40px;
+     max-width: 600px;
+     margin: 80px auto;
+     background: white;
+     border-radius: 12px;
+     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+     animation: fadeIn 0.8s ease-in-out;
+ }
+ 
+ /* Titres */
+ h2 {
+     font-size: 24px;
+     margin-bottom: 20px;
+     font-weight: bold;
+     color: #1c2b4a;
+ }
+ 
+ /* Boîte de résultats */
+ .result-box {
+     background: #f4a261;
+     padding: 15px;
+     border-radius: 10px;
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+     margin-bottom: 15px;
+ }
+ 
+ /* Message d'erreur */
+ .error {
+     color: #b71540;
+     font-weight: bold;
+     font-size: 18px;
+ }
+ 
+ /* --------- FORMULAIRES --------- */
+ input[type="text"],
+ input[type="password"],
+ input[type="number"] {
+     width: 90%;
+     padding: 12px;
+     margin: 10px 0;
+     border: 2px solid #ddd;
+     border-radius: 8px;
+     font-size: 16px;
+     outline: none;
+     transition: border-color 0.3s;
+ }
+ 
+ input:focus {
+     border-color: #1e3c72;
+     box-shadow: 0px 0px 8px rgba(30, 60, 114, 0.5);
+ }
+ 
+ /* Boutons */
+ button {
+     background: #1e3c72;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 8px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
+     margin: 10px;
+ }
+ 
+ button:hover {
+     background: #f4a261;
+     transform: scale(1.05);
+ }
+ 
+ /* --------- FOOTER --------- */
+ footer {
+     background: #1c2b4a;
+     color: white;
+     padding: 15px;
+     font-size: 16px;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /* --------- ANIMATIONS --------- */
+ @keyframes fadeIn {
+     from { opacity: 0; transform: translateY(-10px); }
+     to { opacity: 1; transform: translateY(0); }
+ }
+ 
+ /* --------- RESPONSIVE DESIGN --------- */
+ @media (max-width: 768px) {
+     main {
+         width: 90%;
+         padding: 30px;
+     }
+ 
+     input[type="text"],
+     input[type="password"],
+     input[type="number"] {
+         width: 100%;
+     }
+ }
